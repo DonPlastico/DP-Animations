@@ -191,7 +191,7 @@ Aquí tienes una lista de las vistas previas de tu script.
 
 <img width="277" height="auto" alt="image" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" src="Images (Can Remove it if u want)/favorites.png" />
 
-<img width="277" height="auto" alt="image" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" src="Images (Can Remove it if u want)/localhost.png" />
+<img width="500" height="auto" alt="image" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" src="Images (Can Remove it if u want)/localhost.png" />
 
 </p>
 </details>
@@ -221,3 +221,4 @@ El DP-PedSystem es un script robusto, pero siempre hay espacio para mejoras y nu
 Autor: DP-Scripts<br>
 
 Versión: 1.0.0
+
