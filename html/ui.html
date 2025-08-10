@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DP-Animations</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="compact-ui">
+        <div class="compact-header">
+            <span class="compact-title">Información</span>
+        </div>
+
+        <div class="menu-container">
+            <span id="dances" class="material-icons sidebar active">music_note</span>
+            <span id="shared" class="material-icons sidebar">people</span>
+            <span id="walks" class="material-icons sidebar">elderly</span>
+            <span id="expressions" class="material-icons sidebar">add_reaction</span>
+            <span id="scenarios" class="material-icons sidebar">emoji_people</span>
+            <span id="props" class="material-icons sidebar">token</span>
+            <span id="adult" class="material-icons sidebar">no_adult_content</span>
+            <span id="weapon" class="material-icons sidebar">bolt</span>
+            <span id="pet" class="material-icons sidebar">pets</span>
+            <span id="favorites" class="material-icons sidebar">star</span>
+            <span id="settings" class="material-icons sidebar">settings</span>
+        </div>
+
+        <div id="anims-holder" class="anims-block">
+        </div>
+
+        <footer class="search-footer">
+            <div class="search-container">
+                <input id="search-bar" class="search-bar" placeholder="Search animation...">
+                <span class="material-icons search-icon">search</span>
+            </div>
+        </footer>
+    </div>
+
+    <div class="controls-container">
+        <span id="cancel" class="material-icons controls">pause</span>
+        <span id="delete" class="material-icons controls">auto_fix_high</span>
+        <span id="movement" class="material-icons controls">control_camera</span>
+        <span id="loop" class="material-icons controls">loop</span>
+    </div>
+
+    <div class="settings-container">
+        <span class="settings-title">Ajustes</span>
+        <div>
+            <span>Duración de la animación</span>
+            <input id="set-duration" type="number" placeholder="1500" maxlength="5" min="1000" max="60000"
+                oninput="javascript: if (this.value >= this.max && this.value.length >= this.maxLength) this.value = this.max;">
+        </div>
+        <div>
+            <span>Tecla para cancelar animación</span>
+            <input id="set-cancel" type="number" placeholder="38" maxlength="3" min="0" max="360"
+                oninput="javascript: if (this.value >= this.max && this.value.length >= this.maxLength) this.value = this.max;">
+        </div>
+        <div style="margin-bottom: 10px; border-bottom: 1px solid var(--border-color);"></div>
+        <button id="reset-duration">Restablecer duración de la animación</button>
+        <button id="reset-cancel">Restablecer la tecla para cancelar animación</button>
+        <button id="save-settings" style="margin-bottom: 5%">Guardar cambios</button>
+        
+        <span>Teclas para las animaciónes</span>
+        <div class="keybinds-list">
+            <div class="keybind-item"><span class="key-box">E</span><span class="key-number">38</span></div>
+            <div class="keybind-item"><span class="key-box">X</span><span class="key-number">73</span></div>
+            <div class="keybind-item"><span class="key-box">F</span><span class="key-number">49</span></div>
+            <div class="keybind-item"><span class="key-box">G</span><span class="key-number">47</span></div>
+            <div class="keybind-item"><span class="key-box">H</span><span class="key-number">74</span></div>
+            <div class="keybind-item"><span class="key-box">K</span><span class="key-number">311</span></div>
+            <div class="keybind-item"><span class="key-box">P</span><span class="key-number">199</span></div>
+            <div class="keybind-item"><span class="key-box">Q</span><span class="key-number">44</span></div>
+            <div class="keybind-item"><span class="key-box">R</span><span class="key-number">45</span></div>
+            <div class="keybind-item"><span class="key-box">S</span><span class="key-number">33</span></div>
+            <div class="keybind-item"><span class="key-box">A</span><span class="key-number">30</span></div>
+            <div class="keybind-item"><span class="key-box">B</span><span class="key-number">31</span></div>
+            <div class="keybind-item"><span class="key-box">C</span><span class="key-number">32</span></div>
+            <div class="keybind-item"><span class="key-box">D</span><span class="key-number">34</span></div>
+            <div class="keybind-item"><span class="key-box">I</span><span class="key-number">23</span></div>
+            <div class="keybind-item"><span class="key-box">J</span><span class="key-number">75</span></div>
+            <div class="keybind-item"><span class="key-box">L</span><span class="key-number">76</span></div>
+            <div class="keybind-item"><span class="key-box">M</span><span class="key-number">77</span></div>
+            <div class="keybind-item"><span class="key-box">N</span><span class="key-number">78</span></div>
+            <div class="keybind-item"><span class="key-box">O</span><span class="key-number">79</span></div>
+            <div class="keybind-item"><span class="key-box">T</span><span class="key-number">80</span></div>
+            <div class="keybind-item"><span class="key-box">U</span><span class="key-number">81</span></div>
+            <div class="keybind-item"><span class="key-box">V</span><span class="key-number">82</span></div>
+            <div class="keybind-item"><span class="key-box">W</span><span class="key-number">35</span></div>
+            <div class="keybind-item"><span class="key-box">Y</span><span class="key-number">83</span></div>
+            <div class="keybind-item"><span class="key-box">Z</span><span class="key-number">84</span></div>
+            <div class="keybind-item"><span class="key-box">F5</span><span class="key-number">166</span></div>
+            <div class="keybind-item"><span class="key-box">F6</span><span class="key-number">167</span></div>
+            <div class="keybind-item"><span class="key-box">F7</span><span class="key-number">168</span></div>
+            <div class="keybind-item"><span class="key-box">F8</span><span class="key-number">169</span></div>
+            <div class="keybind-item"><span class="key-box">F9</span><span class="key-number">56</span></div>
+            <div class="keybind-item"><span class="key-box">F10</span><span class="key-number">57</span></div>
+            <div class="keybind-item"><span class="key-box">F11</span><span class="key-number">344</span></div>
+            <div class="keybind-item"><span class="key-box">ESC</span><span class="key-number">322</span></div>
+            <div class="keybind-item"><span class="key-box">~</span><span class="key-number">243</span></div>
+            <div class="keybind-item"><span class="key-box">Tab</span><span class="key-number">37</span></div>
+            <div class="keybind-item"><span class="key-box">Caps</span><span class="key-number">137</span></div>
+            <div class="keybind-item"><span class="key-box">LAlt</span><span class="key-number">19</span></div>
+            <div class="keybind-item"><span class="key-box">Space</span><span class="key-number">22</span></div>
+            <div class="keybind-item"><span class="key-box">RAlt</span><span class="key-number">20</span></div>
+            <div class="keybind-item"><span class="key-box">Insert</span><span class="key-number">174</span></div>
+            <div class="keybind-item"><span class="key-box">Delete</span><span class="key-number">178</span></div>
+            <div class="keybind-item"><span class="key-box">Home</span><span class="key-number">172</span></div>
+            <div class="keybind-item"><span class="key-box">End</span><span class="key-number">173</span></div>
+            <div class="keybind-item"><span class="key-box">PageUp</span><span class="key-number">175</span></div>
+            <div class="keybind-item"><span class="key-box">PageDown</span><span class="key-number">176</span></div>
+            <div class="keybind-item"><span class="key-box">UpArrow</span><span class="key-number">17</span></div>
+            <div class="keybind-item"><span class="key-box">DownArrow</span><span class="key-number">18</span></div>
+            <div class="keybind-item"><span class="key-box">LeftArrow</span><span class="key-number">10</span></div>
+            <div class="keybind-item"><span class="key-box">RightArrow</span><span class="key-number">11</span></div>
+        </div>
+    </div>
+
+    <script type="module" src='./js/script.js'></script>
+    <script type="module" src='./js/listeners.js'></script>
+</body>
+
+</html>
