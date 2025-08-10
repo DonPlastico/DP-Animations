@@ -203,6 +203,16 @@ Aquí tienes una lista de las vistas previas de tu script.
 
 </p>
 </details>
+<details>
+<p align="center">
+<summary><h2 align="center">Video Demostrativo</h2></summary>
+
+<a href="https://youtu.be/o8tCNLDl1ZA">
+<img width="959" height="auto" alt="Video Demostrativo" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" src="https://img.youtube.com/vi/o8tCNLDl1ZA/maxresdefault.jpg" />
+</a>
+
+</p>
+</details>
 <br><br>
 <h2 align="center"> 🔮 Posibles Mejoras Futuras</h2>
 El DP-PedSystem es un script robusto, pero siempre hay espacio para mejoras y nuevas funcionalidades. Aquí hay algunas ideas que es muy probable que en futuro no muy lejano, yo mismo las realice y os actualice el script con las nuevas funciones: (YA ESTOY TRABANDO EN ELLO...)
@@ -219,6 +229,4 @@ El DP-PedSystem es un script robusto, pero siempre hay espacio para mejoras y nu
 </details>
 
 Autor: DP-Scripts<br>
-
 Versión: 1.0.0
-
