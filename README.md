@@ -215,7 +215,7 @@ Aquí tienes una lista de las vistas previas de tu script.
 </details>
 <br><br>
 <h2 align="center"> 🔮 Posibles Mejoras Futuras</h2>
-El DP-PedSystem es un script robusto, pero siempre hay espacio para mejoras y nuevas funcionalidades. Aquí hay algunas ideas que es muy probable que en futuro no muy lejano, yo mismo las realice y os actualice el script con las nuevas funciones: (YA ESTOY TRABANDO EN ELLO...)
+El DP-Animations es un script robusto, pero siempre hay espacio para mejoras y nuevas funcionalidades. Aquí hay algunas ideas que es muy probable que en futuro no muy lejano, yo mismo las realice y os actualice el script con las nuevas funciones.
 
 <details>
 <summary><h2 align="center">🚧 En desarrollo</h2></summary>
